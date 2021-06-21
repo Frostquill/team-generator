@@ -6,7 +6,7 @@ const Engineer = require('./lib/Engineer');
 const employeeArr = [];
 const templateInfo = require('./src/template');
 
-function employeeInfo(info) { 
+function employeeInfo() { 
 return inquirer.prompt([
     {
             type: 'list',

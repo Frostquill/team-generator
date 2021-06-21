@@ -12,6 +12,7 @@ console.log(intern);
 
 function templateInfo (employeeArr) {
 console.log(employeeArr);
+console.log(employeeArr[0]);
 return `<!DOCTYPE html>
 <html lang="en">
 <head>
