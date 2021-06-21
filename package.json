@@ -19,8 +19,11 @@
     "url": "https://github.com/Frostquill/team-generator/issues"
   },
   "homepage": "https://github.com/Frostquill/team-generator#readme",
+  "devDependencies": {
+    "jest": "^27.0.4"
+  },
   "dependencies": {
     "inquirer": "^8.1.1",
-    "jest": "^27.0.4"
+    "node": "^16.3.0"
   }
 }
