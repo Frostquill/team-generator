@@ -1,3 +1,4 @@
+
 # team-generator
 
 the following project was created in an effort to meet the following criteria:
@@ -23,4 +24,12 @@ THEN I exit the application, and the HTML is generated
 Jest was used to comply with testing framework as well as inquirer to allow user input to help populate HTML within the project. 
 
 https://github.com/Frostquill/team-generator - link to REPO 
+
+![Team Generator](https://user-images.githubusercontent.com/79546270/123040349-796bb380-d3a8-11eb-9728-485c4b4fb5ff.JPG) - screenshot of HTML 
+
+
+
+https://user-images.githubusercontent.com/79546270/123040395-88eafc80-d3a8-11eb-9e8c-48a728d831cc.mp4 - link to Tests
+
+https://drive.google.com/file/d/1diTh8nGiyKsbnggwGyAQqTKrJjEmOVhB/view - link to team generator
 
