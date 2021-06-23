@@ -35,7 +35,7 @@ const engineerArr = employeeArr.filter(engineer => engineer.getRole() === 'Engin
 const engineerCard = engineerArr.map(engineer => {
     return  `
     <div class= "col-3 mx-auto">
-    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+    <div class="card m-3 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
     <div class="card-body bg-info">
       <h5 class="card-title">${engineer.getName()}</h5>
       <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
@@ -60,7 +60,7 @@ const internArr = employeeArr.filter(intern => intern.getRole() === 'Intern');
 const internCard = internArr.map(intern => {
     return ` 
     <div class= "col-3 mx-auto">
-    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+    <div class="card m-3 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
     <div class="card-body bg-info">
       <h5 class="card-title">${intern.getName()}</h5>
       <p class="card-text"><span class="material-icons">
