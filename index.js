@@ -17,35 +17,83 @@ return inquirer.prompt([
     {
         type: 'input',
         name: 'name',
-        message:'What is your name?'
+        message:'What is your name?',
+        validate: empName => {
+            if(empName) {
+                return true;
+            } else {
+                console.log('Please enter a name!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'id',
-        message: 'What is your id number?'
+        message: 'What is your id number?',
+        validate: empId => {
+            if(empId) {
+                return true;
+            } else {
+                console.log('Please enter an ID!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'email',
-        message: 'what is your email?'
+        message: 'what is your email?',
+        validate: empEmail => {
+            if(empEmail) {
+                return true;
+            } else {
+                console.log('Please enter an email!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'school',
         message: 'What school have you attended?',
-        when: answers => answers.roleChoice === 'Intern'
+        when: answers => answers.roleChoice === 'Intern',
+        validate: empSchool => {
+            if(empSchool) {
+                return true;
+            } else {
+                console.log('Please enter a school!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'github',
         message: 'enter your github username?',
-        when: answers => answers.roleChoice === 'Engineer'
+        when: answers => answers.roleChoice === 'Engineer',
+        validate: empGitHub => {
+        if(empGitHub) {
+            return true;
+        } else {
+            console.log('Please enter a GitHub user name!');
+            return false;
+        }
+    }
     },
     {
         type: 'input',
         name: 'phone',
         message: 'what is your office number?',
-        when: answers => answers.roleChoice === 'Manager'
+        when: answers => answers.roleChoice === 'Manager',
+        validate: empPhone => {
+        if(empPhone) {
+            return true;
+        } else {
+            console.log('Please enter an office number!');
+            return false;
+        }
+    }
     },
     {
         type: 'confirm',
